@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="de.fs.fintech.geogame.PortalDetailsActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/modRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <ImageButton
+            android:id="@+id/imageButtonM1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@android:drawable/btn_star" />
+
+        <ImageButton
+            android:id="@+id/imageButtonM2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/imageButtonM1"
+            app:srcCompat="@android:drawable/btn_star" />
+
+        <ImageButton
+            android:id="@+id/imageButtonM3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/imageButtonM2"
+            app:srcCompat="@android:drawable/btn_star" />
+
+        <ImageButton
+            android:id="@+id/imageButtonM4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/imageButtonM3"
+            app:srcCompat="@android:drawable/btn_star" />
+
+
+
+        <ImageButton
+            android:id="@+id/imageButtonSW"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/imageButtonM1"
+            app:srcCompat="@android:drawable/btn_star" />
+
+
+        <ImageButton
+            android:id="@+id/imageButtonS"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageButtonM2"
+            android:layout_toEndOf="@+id/imageButtonSW"
+            app:srcCompat="@android:drawable/btn_star" />
+
+
+        <ImageButton
+            android:id="@+id/imageButtonSE"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageButtonM3"
+            android:layout_toEndOf="@+id/imageButtonS"
+            app:srcCompat="@android:drawable/btn_star" />
+
+
+        <ImageButton
+            android:id="@+id/imageButtonW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/imageButtonSW"
+            app:srcCompat="@android:drawable/btn_star" />
+
+        <ImageButton
+            android:id="@+id/imageButtonC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageButtonS"
+            android:layout_toEndOf="@+id/imageButtonW"
+            app:srcCompat="@android:drawable/btn_star" />
+
+        <ImageButton
+            android:id="@+id/imageButtonE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/imageButtonSE"
+            android:layout_toEndOf="@+id/imageButtonC"
+            app:srcCompat="@android:drawable/btn_star" />
+
+
+
+        <ImageButton
+            android:id="@+id/imageButtonNW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_above="@id/imageButtonW"
+            app:srcCompat="@android:drawable/btn_star" />
+
+        <ImageButton
+            android:id="@+id/imageButtonN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_above="@id/imageButtonC"
+            android:layout_toEndOf="@+id/imageButtonNW"
+            app:srcCompat="@android:drawable/btn_star" />
+
+        <ImageButton
+            android:id="@+id/imageButtonNE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/imageButtonE"
+            android:layout_toEndOf="@+id/imageButtonN"
+            app:srcCompat="@android:drawable/btn_star" />
+
+        <TextView
+            android:id="@+id/textDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"
+            android:text="TextView" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_marginBottom="32dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            app:srcCompat="@android:drawable/ic_menu_camera"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/textDescription"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:adjustViewBounds="true"
+            android:padding="20dp"
+            android:scaleType="fitCenter"
+            />
+        <!-- android:layout_above="@+id/imageButtonNW" -->
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/buttonRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/modRow"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        >
+
+
+        <Button
+            android:id="@+id/button_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:text="OK" />
+
+
+        <Button
+            android:id="@+id/button_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button_ok"
+            android:layout_alignParentEnd="true"
+            android:text="Navigate" />
+
+        <Button
+            android:id="@+id/button_mission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button_nav"
+            android:layout_alignParentEnd="true"
+            android:text="Missions" />
+
+        <Button
+            android:id="@+id/button_mod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button_mission"
+            android:layout_alignParentEnd="true"
+            android:text="Mod" />
+
+        <Button
+            android:id="@+id/button_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button_mod"
+            android:layout_alignParentEnd="true"
+            android:text="Recharge" />
+
+        <Button
+            android:id="@+id/button_reso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button_recharge"
+            android:layout_alignParentEnd="true"
+            android:text="Resonators" />
+
+        <Button
+            android:id="@+id/button_hack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button_reso"
+            android:layout_alignParentEnd="true"
+            android:text="Hack" />
+
+        <Button
+            android:id="@+id/button_attack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button_hack"
+            android:layout_alignParentEnd="true"
+            android:text="Attack" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

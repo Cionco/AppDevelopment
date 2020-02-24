@@ -1,0 +1,1 @@
+snippet_void_main; 1; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10; void, String, String[], string[], string, double, int, Double, Integer, static;

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button_north"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="North" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_west"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="West" />
+
+        <Button
+            android:id="@+id/button_east"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="buttonEastPress"
+            android:text="East" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_south"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="South" />
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next >>>" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login" />
+    <Button
+        android:id="@+id/button_login_firebase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Firebase" />
+    <Button
+        android:id="@+id/button_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intro" />
+    <Button
+        android:id="@+id/button_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Map" />
+    <Button
+        android:id="@+id/button_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Profile" />
+</LinearLayout>

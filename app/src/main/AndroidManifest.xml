@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.fs.fintech.geogame">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- MOCK locations in debug-manifest !!! -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+            <!--
+             android:roundIcon="@mipmap/ic_launcher_round"
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".SubActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginFirebaseActivity" />
+        <activity android:name=".GoogleSignInActivity" />
+        <activity android:name=".IntroActivity" />
+        <activity android:name=".IntroDynActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:configChanges="orientation" />
+        <!--
+          android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait"
+        -->
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".PortalDetailsActivity" />
+        <activity android:name=".touch.TouchPaintActivity" />
+        <activity android:name=".AccelerometerPlayActivity" />
+        <activity
+            android:name=".NavDrawerActivity"
+            android:label="@string/title_activity_nav_drawer"
+            android:parentActivityName=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.fs.fintech.geogame.SplashActivity" />
+        </activity>
+        <activity
+            android:name=".NavDrawerMapActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.fs.fintech.geogame.SplashActivity" />
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="GeoGame"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+
+            <!-- android:theme="@style/FullscreenTheme" -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".NavDrawerActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.fs.fintech.geogame.NavDrawerActivity" />
+        </activity>
+        <activity android:name=".PortalEditorActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="de.fs.fintech.geogame.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".ScrollingHelpActivity"
+            android:label="@string/title_activity_scrolling_portal_list"
+            android:parentActivityName=".NavDrawerActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.fs.fintech.geogame.NavDrawerActivity" />
+        </activity>
+        <activity android:name=".PortalListActivity" />
+        <activity android:name=".SelectFactionFromListActivity" />
+        <activity android:name=".ImportPortalCsvActivity" />
+        <activity android:name=".PortalUniqueEditorActivity" />
+
+        <receiver android:name=".service.AlarmReceiver" />
+        <receiver android:name=".service.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".service.PlayerIntentService"
+            android:exported="false" />
+
+        <activity android:name=".PortalGameActivityNicolas" />
+        <activity android:name=".PortalGameActivityJamin" />
+        <activity android:name=".PortalGameSnippetActivity" />
+        <activity android:name=".BackgroundTestActivity" />
+        <activity android:name=".PortalGameActivityDeprecated" />
+        <activity android:name=".PortalGameActivity" />
+        <activity android:name=".LeaderBoardAlphaActivity"></activity>
+    </application>
+
+</manifest>

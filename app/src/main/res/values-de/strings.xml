@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GeoGame</string>
+    <string name="action_send">Senden</string>
+    <string name="action_nearby">Portale in der Nähe</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="google_title_text">Anmelden mit Google</string>
+    <string name="lbl_intro1">Spiel Trailer</string>
+    <string name="lbl_intro2">Erste Schritte</string>
+    <string name="lbl_quit">Hab\'s verstanden</string>
+    <string name="loading">lade...</string>
+    <string name="not_signed_in">Nicht angemeldet</string>
+    <string name="pref_header_general">Allgemein</string>
+    <string name="pref_description_toast_location_updates">Zeigt eine kleine Nachricht bei jeder Änderung der position</string>
+    <string name="pref_header_notifications">Benachrichtigungen</string>
+    <string name="pref_ringtone_silent">Stumm</string>
+    <string name="pref_title_vibrate">Vibration</string>
+    <string name="pref_title_ringtone">Klingelton</string>
+    <string name="sign_out">Abmelden</string>
+    <string name="signed_out">Abgemeldet</string>
+    <string name="signed_in_fmt">Anmelden als  %1$s</string>
+    <string name="title_activity_settings">Einstellungen</string>
+    <string name="boxes_destroyed">Boxen Zerstört</string>
+    <string name="boxes_destroyed_capture">Boxen Zerstört/Einnehmen</string>
+    <string name="capture_successful">EINNEHMEN ERFOLGREICH!</string>
+    <string name="capture_failed">EINNEHMEN FEHLGESCHLAGEN</string>
+    <string name="back_to_portal">Zurück zur Portalübersicht</string>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_north"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="North" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_west"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="West" />
+
+            <Button
+                android:id="@+id/button_east"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="buttonEastPress"
+                android:text="East" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_south"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="South" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next >>>" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/button_login_firebase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login Firebase" />
+
+        <Button
+            android:id="@+id/button_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Intro" />
+
+        <Button
+            android:id="@+id/button_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Map" />
+
+        <Button
+            android:id="@+id/button_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Profile" />
+
+        <Button
+            android:id="@+id/button_portal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Portal Details" />
+
+        <Button
+            android:id="@+id/button_accelerometer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accelerometer" />
+
+        <Button
+            android:id="@+id/button_touchpaint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Touch Paint" />
+
+        <Button
+            android:id="@+id/button_navdrawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Navigation Drawer" />
+        <Button
+            android:id="@+id/button_selectfaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Faction" />
+
+        <Button
+            android:id="@+id/button_snippet_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Snippet Game"/>
+
+        <Button
+            android:id="@+id/button_jump_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jump Game"/>
+
+        <Button
+            android:id="@+id/button_background_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Background Test"/>
+
+        <Button
+            android:id="@+id/button_portal_unique_editor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Portal Unique Editor"/>
+
+        <Button
+            android:id="@+id/button_portal_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Portal List" />
+    </LinearLayout>
+</ScrollView>
